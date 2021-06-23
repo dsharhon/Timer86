@@ -3,6 +3,8 @@
   "start_url": "timer.html",
   "orientation": "portrait",
   "display": "standalone",
+  "theme_color": "#000008",
+  "background_color": "#000000",
   "icons": [{
     "src": "timer.png",
     "sizes": "196x196",
