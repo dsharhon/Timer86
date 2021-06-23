@@ -1,0 +1,37 @@
+/* By Dylan Sharhon, 2021 */
+* {
+  box-sizing: border-box;
+  /*outline: solid 1px gray;*/
+}
+html {
+  height: 100%;
+  text-align: center;
+  font: bold 28px monospace;
+  background: #000;
+  color: #fff;
+  user-select: none;
+}
+body {
+  height: 100%;
+}
+
+td {
+  border: solid 1px #333;
+  height: 80px;
+}
+
+#timer, #editor {
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+#start, #enter {
+  height: 100%;
+}
+
+#edit { color: brown; }
+#stop { color: red; }
+#reset { color: blue; }
+#start { color: #3f3; }

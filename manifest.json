@@ -1,0 +1,9 @@
+{
+  "name": "timer86",
+  "start_url": "timer.html",
+  "icons": [{
+    "src": "timer.png",
+    "sizes": "196x196",
+    "type": "image/png"
+  }]
+}
