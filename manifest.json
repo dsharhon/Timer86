@@ -1,6 +1,8 @@
 {
   "name": "timer86",
   "start_url": "timer.html",
+  "orientation": "portrait",
+  "display": "standalone",
   "icons": [{
     "src": "timer.png",
     "sizes": "196x196",
