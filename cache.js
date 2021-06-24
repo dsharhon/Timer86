@@ -6,10 +6,12 @@ const files = [
   'favicon.ico',
   'manifest.json',
   'normalize.css',
-  'timer.css',
-  'timer.html',
-  'timer.js',
-  'timer.mp3'
+  'index.css',
+  'index.html',
+  'index.js',
+  'alarm.mp3',
+  'beep.mp3',
+  'icon-196.png'
 ]
 
 // Handle installing the service worker

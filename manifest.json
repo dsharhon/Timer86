@@ -1,12 +1,12 @@
 {
-  "name": "timer86",
-  "start_url": "timer.html",
+  "name": "Timer86",
+  "start_url": "/Timer86/",
   "orientation": "portrait",
   "display": "standalone",
   "theme_color": "#000008",
   "background_color": "#000000",
   "icons": [{
-    "src": "timer.png",
+    "src": "icon-196.png",
     "sizes": "196x196",
     "type": "image/png"
   }]

@@ -1,0 +1,47 @@
+/* By Dylan Sharhon, 2021 */
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  text-align: center;
+  font: bold 28px monospace;
+  background: #000;
+  color: #fff;
+  user-select: none;
+}
+body {
+  height: 100%;
+}
+
+td {
+  border: solid 1px #333;
+  height: 80px;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+#start {
+  height: 100%;
+  max-height: 800px;
+}
+
+#filler {
+  height: 100%;
+  border: none;
+}
+
+#edit { color: brown; }
+#stop { color: red; }
+#reset { color: blue; }
+#start { color: #3f3; }
+#ok { color: orange; }
+#clear { color: red; }
+
+.blinking { animation: blink 0.5s step-start infinite; }
+@keyframes blink { 50% { opacity: 0.1; } }
