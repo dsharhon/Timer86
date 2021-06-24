@@ -95,10 +95,18 @@ const step = () => {
 }
 
 // Switch from the reset/paused state to the countdown state
-const start = () => {
+const beep = fetch('beep.mp3').then(res => res.arrayBuffer())
+let mp3 = null
+const start = async () => {
   clock = setInterval(step, 1000)
 
-  $('beep').play()
+  //$('beep').play() // high latency
+  const ctx = new AudioContext()
+  const src = ctx.createBufferSource()
+  mp3 = mp3 || await beep.then(buf => ctx.decodeAudioData(buf))
+  src.buffer = mp3
+  src.connect(ctx.destination)
+  src.start()
 
   $('edit').hidden = true
   $('stop').hidden = false
