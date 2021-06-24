@@ -95,18 +95,12 @@ const step = () => {
 }
 
 // Switch from the reset/paused state to the countdown state
-const beep = fetch('beep.mp3').then(res => res.arrayBuffer())
-let mp3 = null
-const start = async () => {
+const start = () => {
   clock = setInterval(step, 1000)
 
-  //$('beep').play() // high latency
-  const ctx = new AudioContext()
-  const src = ctx.createBufferSource()
-  mp3 = mp3 || await beep.then(buf => ctx.decodeAudioData(buf))
-  src.buffer = mp3
-  src.connect(ctx.destination)
-  src.start()
+  // Flash the time to confirm
+  $('time').classList.add('blink')
+  setTimeout(() => $('time').classList.remove('blink'), 100)
 
   $('edit').hidden = true
   $('stop').hidden = false
@@ -151,9 +145,6 @@ const add = button => {
 // Start up ////////////////////////////////////////////////////////////////////
 try {
 
-  // Cache PWA assets
-  navigator.serviceWorker.register('cache.js')
-
   // Register button functions
   addHandlers($('edit'), { onPress: edit })
   addHandlers($('stop'), { onPress: stop })
@@ -169,3 +160,6 @@ try {
 } catch (e) {
   alert(e)
 }
+
+// Cache PWA assets
+navigator.serviceWorker.register('cache.js')

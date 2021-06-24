@@ -10,7 +10,6 @@ const files = [
   'index.html',
   'index.js',
   'alarm.mp3',
-  'beep.mp3',
   'icon-196.png'
 ]
 
