@@ -6,7 +6,11 @@
   "theme_color": "#000008",
   "background_color": "#000000",
   "icons": [{
-    "src": "icon-196.png",
+    "src": "icon_24.png",
+    "sizes": "24x24",
+    "type": "image/png"
+  }, {
+    "src": "icon_196_maskable.png",
     "sizes": "196x196",
     "type": "image/png"
   }]
