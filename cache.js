@@ -1,16 +1,16 @@
 // Configure the cache
-const name = 'Timer86-v1'
-const wait = 3000
+const name = 'Timer86-v2'
+const wait = 1000
 const files = [
   'cache.js',
-  'favicon.ico',
   'manifest.json',
   'normalize.css',
   'index.css',
   'index.html',
   'index.js',
   'alarm.mp3',
-  'icon-196.png'
+  'icon_24.png',
+  'icon_196_maskable.png'
 ]
 
 // Handle installing the service worker
